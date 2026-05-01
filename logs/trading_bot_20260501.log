@@ -1,0 +1,46 @@
+2026-05-01 06:23:02 | INFO     | trading_bot | Logging initialised → /home/claude/trading_bot/logs/trading_bot_20260501.log
+2026-05-01 06:23:02 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 06:23:02 | ERROR    | trading_bot.cli | Validation failed: Price is required for LIMIT orders.
+2026-05-01 06:23:07 | INFO     | trading_bot | Logging initialised → /home/claude/trading_bot/logs/trading_bot_20260501.log
+2026-05-01 06:23:07 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 06:23:07 | ERROR    | trading_bot.cli | Validation failed: Quantity must be greater than zero, got -5.
+2026-05-01 06:23:07 | INFO     | trading_bot | Logging initialised → /home/claude/trading_bot/logs/trading_bot_20260501.log
+2026-05-01 06:23:07 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 06:23:07 | ERROR    | trading_bot.cli | Validation failed: stopPrice is required for STOP_MARKET orders.
+2026-05-01 12:29:20 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:29:20 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:29:20 | DEBUG    | trading_bot.client | → GET https://testnet.binancefuture.com/fapi/v1/time | params: {}
+2026-05-01 12:29:21 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"serverTime":1777618761276}
+2026-05-01 12:30:13 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:30:13 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:30:19 | INFO     | trading_bot.orders | MARKET BUY BTCUSDT qty=0.001
+2026-05-01 12:30:19 | INFO     | trading_bot.client | Placing order → {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-01 12:30:19 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1777618819788, 'recvWindow': 5000}
+2026-05-01 12:30:21 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"orderId":13095624157,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"vGw8Vl3fihER5wVrwLd69u","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-05-01 12:30:21 | INFO     | trading_bot.orders | MARKET order placed successfully | orderId=13095624157 status=NEW executedQty=0.0000 avgPrice=0.00
+2026-05-01 12:30:32 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:30:32 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:30:36 | INFO     | trading_bot.orders | LIMIT SELL BTCUSDT qty=0.001 price=98000 tif=GTC
+2026-05-01 12:30:36 | INFO     | trading_bot.client | Placing order → {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '98000', 'timeInForce': 'GTC'}
+2026-05-01 12:30:36 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '98000', 'timeInForce': 'GTC', 'timestamp': 1777618836727, 'recvWindow': 5000}
+2026-05-01 12:30:37 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"orderId":13095624821,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"zRwbKfIvfNCkMuPnJFpTlO","price":"98000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"up
+2026-05-01 12:30:37 | INFO     | trading_bot.orders | LIMIT order placed successfully | orderId=13095624821 status=NEW price=98000.00
+2026-05-01 12:30:45 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:30:45 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:30:45 | INFO     | trading_bot.client | Fetching account info …
+2026-05-01 12:30:45 | DEBUG    | trading_bot.client | → GET https://testnet.binancefuture.com/fapi/v2/account | params: {'timestamp': 1777618845820, 'recvWindow': 5000}
+2026-05-01 12:30:46 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"feeTier":0,"canTrade":true,"canDeposit":true,"canWithdraw":true,"feeBurn":true,"tradeGroupId":-1,"updateTime":0,"multiAssetsMargin":false,"totalInitialMargin":"3.85026084","totalMaintMargin":"0.30802086","totalWalletBalance":"4999.96919872","totalUnrealizedProfit":"0.00201662","totalMarginBalance":"4999.97121534","totalPositionInitialMargin":"3.85026084","totalOpenOrderInitialMargin":"0.00000000","totalCrossWalletBalance":"4999.96919872","totalCrossUnPnl":"0.00201662","availableBalance":"4996.
+2026-05-01 12:31:35 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:31:35 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:31:38 | INFO     | trading_bot.orders | MARKET BUY BTCUSDT qty=0.001
+2026-05-01 12:31:38 | INFO     | trading_bot.client | Placing order → {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-01 12:31:38 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1777618898104, 'recvWindow': 5000}
+2026-05-01 12:31:40 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"orderId":13095627237,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"GRmqgVUebNG5qekZ10Mm0V","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-05-01 12:31:40 | INFO     | trading_bot.orders | MARKET order placed successfully | orderId=13095627237 status=NEW executedQty=0.0000 avgPrice=0.00
+2026-05-01 12:31:51 | INFO     | trading_bot | Logging initialised → D:\trading_bot\logs\trading_bot_20260501.log
+2026-05-01 12:31:51 | INFO     | trading_bot.client | BinanceClient initialised → https://testnet.binancefuture.com
+2026-05-01 12:31:54 | INFO     | trading_bot.orders | LIMIT SELL BTCUSDT qty=0.001 price=98000 tif=GTC
+2026-05-01 12:31:54 | INFO     | trading_bot.client | Placing order → {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '98000', 'timeInForce': 'GTC'}
+2026-05-01 12:31:54 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '98000', 'timeInForce': 'GTC', 'timestamp': 1777618914126, 'recvWindow': 5000}
+2026-05-01 12:31:55 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"orderId":13095627793,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"w0Yfcm3gaJthi0uLl35nX0","price":"98000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"up
+2026-05-01 12:31:55 | INFO     | trading_bot.orders | LIMIT order placed successfully | orderId=13095627793 status=NEW price=98000.00
